@@ -47,7 +47,6 @@ module.exports = function (app) {
 
         friends.push(userData);
 
-        // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
         res.json(bestMatch);
     });
 };
