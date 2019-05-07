@@ -11,8 +11,6 @@ module.exports = function (app) {
         res.json(friends);
     });
 
-
-
     app.post("/api/friends", function (req, res) {
 
         var bestMatch = {
@@ -23,11 +21,7 @@ module.exports = function (app) {
 
         var userData = req.body;
         var userScores = userData.scores;
-
-
         var totalDifference;
-
-
         for (var i = 0; i < friends.length; i++) {
             var currentFriend = friends[i];
             totalDifference = 0;
